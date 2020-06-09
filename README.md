@@ -5,8 +5,6 @@
 
 
 ![](demo.gif)
-Initial Release
-1.0
 
 > ##### Current Tasks
   - Add semicolons without messsing with Formatting
@@ -14,4 +12,8 @@ Initial Release
   - Integrate with javac command.
 
 > ##### Tip
-Format Document after the executio
+Format Document after the execution
+
+Initial Release
+
+    1.0
