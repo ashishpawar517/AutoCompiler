@@ -80,6 +80,8 @@ public class AutoSemiColon {
         pos.sort(Comparator.naturalOrder());
         for (long p : pos) {
             writeToFile(args[0], ";", p);
+            writeToFile(args[0], "\n", p+1);
+            
             count++;
         }
         System.out.println("Semicolon Added " + count);
