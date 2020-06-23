@@ -70,6 +70,7 @@ public class AutoSemiColon {
         CompilationTask task = compiler.getTask(null, fileManager, listener, null, null, fileObjects);
         Boolean result = task.call();
 
+        
         if (result == true) {
             System.out.println("Compilation has succeeded");
         }
