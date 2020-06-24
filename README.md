@@ -1,6 +1,6 @@
-# Java AutoSemiColon
+# Java AutoCompiler
 
-- Add semicolons to your java files automatically
+- Solves common programming errors such as missing semicolons and brackets.
 - Powered by Java Compiler API
 
 
