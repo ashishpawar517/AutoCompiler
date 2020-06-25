@@ -1,31 +1,39 @@
-
-// AdvancedCompilationTest.java:
+// package omitted currently
 // package test;
-// import java.io.*;
 import java.util.*;
 import java.util.stream.Collectors;
 
 import javax.tools.*;
 import javax.tools.JavaCompiler.*;
 
+//class name will be renamed afterwards
 public class Check {
     public static void main(String[] args) throws Exception {
         JavaCompiler compiler = ToolProvider.getSystemJavaCompiler();
         MyDiagnosticListener listener = new MyDiagnosticListener(); 
         StandardJavaFileManager fileManager = compiler.getStandardFileManager(listener, null, null); 
+       
+       
+        //file name using command line argument
         String fileToCompile = args[0];
+       
         Iterable fileObjects = fileManager.getJavaFileObjectsFromStrings(Arrays.asList(fileToCompile)); 
         CompilationTask task = compiler.getTask(null, fileManager, listener, null, null, fileObjects); 
-        Boolean result = task.call(); // Line 7
+        
+        
+        
+        Boolean result = task.call(); // compile the file 
         if (result == true) {
             System.out.println("Compilation has succeeded");
         }
-
+        //print the list each tuple has 3 values error type, position and what symbol is expected
         // System.out.println(listener.getList());
         List<Tuple<String>> list = listener.getList();
+        // sort using positions of errors
         list = list.stream().sorted(Comparator.comparing(Tuple::getSecond)).collect(Collectors.toList());
     
-        System.out.println(list);
+        // System.out.println(list);
+       
         RandomWriter writer = new RandomWriter();
         for (Tuple<String> tuple : list) {
             String error = tuple.getThird();
@@ -36,34 +44,3 @@ public class Check {
         }
     }
 }
-
-// class MyDiagnosticListener implements DiagnosticListener {
-
-//     List<Tuple<String>> li;
-//     MyDiagnosticListener()
-//     {
-//         li = new ArrayList<>();
-//     }
-//     public void report(Diagnostic diagnostic) {
-
-//         // System.out.println("Code->" + diagnostic.getCode());
-//         // System.out.println("Column Number->" + diagnostic.getColumnNumber());
-//         // System.out.println("End Position->" + diagnostic.getEndPosition());
-//         // System.out.println("Kind->" + diagnostic.getKind());
-//         // System.out.println("Line Number->" + diagnostic.getLineNumber());
-//         // System.out.println("Message->" + diagnostic.getMessage(Locale.ENGLISH));
-//         // System.out.println("Position->" + diagnostic.getPosition());
-//         // System.out.println("Source" + diagnostic.getSource());
-//         // System.out.println("Start Position->" + diagnostic.getStartPosition());
-//         // System.out.println("\n");
-
-//         li.add(new Tuple<String> (diagnostic.getCode(), String.valueOf(
-//                 diagnostic.getPosition()),diagnostic.getMessage(Locale.ENGLISH) ));
-
-//     }
-
-//     public List<Tuple<String>> getList()
-//     {
-//         return this.li;
-//     }
-// }
