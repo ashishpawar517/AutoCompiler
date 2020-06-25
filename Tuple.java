@@ -1,3 +1,5 @@
+
+//class for storing three values.
 public class Tuple<T>
 {
     private T a,b,c;
