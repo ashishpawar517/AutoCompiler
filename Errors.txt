@@ -1,7 +1,0 @@
-[parsing started RegularFileObject[Demo.java]]
-Demo.java:6: error: ';' expected
-        System.out.println("hello world")
-                                         ^
-[parsing completed 41ms]
-[total 82ms]
-1 error
