@@ -4,7 +4,7 @@
 - Powered by Java Compiler API
 
 
-![](readme/ezgif_demo2.gif)
+![](ezgif_demo2.gif)
 
 > ##### Current Tasks
   - Long java Check command to Set path variable (automatically)
