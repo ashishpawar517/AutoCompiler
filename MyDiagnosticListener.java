@@ -1,8 +1,9 @@
 import java.util.*;
 import javax.tools.*;
-
+// for each time task.call is fired report method of MyDiagnosticListener is fired
 public class MyDiagnosticListener implements DiagnosticListener {
 
+    //list of tuples for storing error information
     List<Tuple<String>> li;
     MyDiagnosticListener()
     {
@@ -21,11 +22,13 @@ public class MyDiagnosticListener implements DiagnosticListener {
         // System.out.println("Start Position->" + diagnostic.getStartPosition());
         // System.out.println("\n");
 
+        //adding error code, position, error message to list for each error
         li.add(new Tuple<String> (diagnostic.getCode(), String.valueOf(
                 diagnostic.getPosition()),diagnostic.getMessage(Locale.ENGLISH) ));
 
     }
 
+    //return the current list
     public List<Tuple<String>> getList()
     {
         return this.li;
