@@ -1,5 +1,6 @@
 # Wants to Contribute ?
------
+
+<!-- ----- -->
 👍🎉 First off, thanks for taking the time to contribute! 🎉👍
 
 ## Adding features
@@ -10,5 +11,6 @@
 
 
 ## Report bugs
-- Use GitHub issues to track public bugs. Report a bug by [opening a new issue](); 
+
+- Use GitHub issues to track public bugs. Report a bug by [opening a new issue](https://github.com/pawarashish564/AutoCompiler/issues/new); 
 
