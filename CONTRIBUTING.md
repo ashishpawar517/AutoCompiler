@@ -5,9 +5,8 @@
 ## Adding features
 
 1. Fork it 🍴 
-2. Change branch to new_contrib 💻
-3. Add code that you want to edit . 👨‍💻 
-4. push to your github and request a pull request. 🙋
+2. Add code that you want to edit . 👨‍💻 
+3. push to your github and request a pull request to master. 🙋
 
 
 ## Report bugs
