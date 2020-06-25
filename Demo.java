@@ -12,7 +12,7 @@ class Demo {
      System.out.println("hello world");
      System.out.println("hello world");
     
-      int a =  ((10+20)*10);
+      int a =  ((10+20)*10)
       int arr[] = new int[20];
     }
 }
