@@ -21,10 +21,10 @@ public class MyDiagnosticListener implements DiagnosticListener {
         // System.out.println("Source" + diagnostic.getSource());
         // System.out.println("Start Position->" + diagnostic.getStartPosition());
         // System.out.println("\n");
-
+        
         //adding error code, position, error message to list for each error
-        li.add(new Tuple<String> (diagnostic.getCode(), String.valueOf(
-                diagnostic.getPosition()),diagnostic.getMessage(Locale.ENGLISH) ));
+        //added line number as forth param in  Tuple
+        li.add(new Tuple<String> (diagnostic.getCode(), String.valueOf(diagnostic.getPosition()),diagnostic.getMessage(Locale.ENGLISH) , String.valueOf(diagnostic.getLineNumber())) );
 
     }
 

@@ -12,5 +12,5 @@
 
 ## Report bugs
 
-- Use GitHub issues to track public bugs. Report a bug by [opening a new issue](https://github.com/pawarashish564/AutoCompiler/issues/new); 
+- Use GitHub issues to track public bugs. Report a bug by [opening a new issue](https://github.com/pawarashish564/AutoCompiler/issues/new);
 
