@@ -52,29 +52,60 @@ public class Check {
         RandomReader reader = new RandomReader();
         for (Tuple<String> tuple : otherErrors) {
             
-            // String error  = tuple.getThird();
-           
-            // if(error.equals("incompatible types: int[] cannot be converted to int n"))
+            String error  = tuple.getThird();
+            error  = error.trim();
+            String type = tuple.getFirst();
+            // System.out.println(error);
+            
+            if(error.equals("incompatible types: int[] cannot be converted to int"))
             {
                 //manually handle the case when square bracket is missing
                 // long pos = Long.parseLong(tuple.getSecond());
                 // writer.writeToFile(fileToCompile, "[", pos-2);
                 // writer.writeToFile(fileToCompile, "]", pos - 1);
                 long lineNumber = Long.parseLong(tuple.getForth());
+
                 String line = reader.getLine(fileToCompile, lineNumber);
                 // System.out.println(line);
                 StringBuffer sb = new StringBuffer(line.trim());
                 int index = sb.indexOf("=");
                 sb.insert(index - 1, "[]");
-                System.out.println(sb);
-                writer.writeTofileWithLineNumber(fileToCompile, "// this line has been commented ", lineNumber - 1);
+                // System.out.println(sb);
+                // writer.writeTofileWithLineNumber(fileToCompile, "// this line has been commented ", lineNumber - 1);
+                writer.commentLine(fileToCompile, lineNumber-1);
                 writer.writeTofileWithLineNumber(fileToCompile, sb.toString(), lineNumber);
+            }
+            else if(error.equals("reached end of file while parsing"))
+            {
+                
+                // System.out.println("matched ");
+                // lineNumber = Long.parseLong(tuple.getForth());
+                long lineNumber = Long.parseLong(tuple.getForth());
+                writer.writeTofileWithLineNumber(fileToCompile, "}",lineNumber );
+       
+            }
+            else if(type.equals("compiler.err.class.public.should.be.in.file"))
+            {
+                long lineNumber = Long.parseLong(tuple.getForth());
+                // String line = reader.getLine(fileToCompile, lineNumber);
+                // writer.commentLine(fileToCompile, lineNumber);
 
+                writer.commentLine(fileToCompile, lineNumber - 1);
+                // String[] arr = fileToCompile.split(".");
+                // System.out.println(Arrays.toString(arr));
+                String classname = fileToCompile.split("[.]")[0];
+                // System.out.println(fileToCompile.split("."));
+                writer.writeTofileWithLineNumber(fileToCompile, "public class "+classname+"{", lineNumber);
+            }
+
+            else
+            {
+                System.out.println("Currently not support for this error ");
             }
         }
 
 
-        if (result == true) {
+        if (result) {
             System.out.println("\nCompilation has succeeded");
         }
     }

@@ -30,9 +30,21 @@ public class RandomWriter {
     {
         Path p = Paths.get(filepath);
         List<String> lines = Files.readAllLines(p);
-    //     // lines.set(line, dataType.toUpperCase() + ":" + newData);
-        lines.set((int) lineNumber, data);
-        Files.write(p, lines); // You can add a charset and other options too
+        // lines.set((int) lineNumber, data);
+        // lines.remove((int)lineNumber);
+        lines.add((int) lineNumber, data);
+        Files.write(p, lines); 
  
+    }
+
+    void commentLine(String filepath, long lineNumber) throws IOException
+    {
+        Path p = Paths.get(filepath);
+        List<String> lines = Files.readAllLines(p);
+        String line = lines.get((int) lineNumber);
+        line = "//"+line;
+        lines.set((int) lineNumber, line);
+        Files.write(p, lines);
+
     }
 }
