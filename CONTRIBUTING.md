@@ -23,7 +23,7 @@
 3. git merge upstream/master
 4. git push
 
-- Use GitHub issues to track public bugs. Report a bug by [opening a new issue](https://github.com/pawarashish564/AutoCompiler/issues/new);
+<!-- - Use GitHub issues to track public bugs. Report a bug by [opening a new issue](https://github.com/pawarashish564/AutoCompiler/issues/new); -->
 
 ### Check out current issues/discussions
 
