@@ -18,9 +18,9 @@
 
 > ## Current Tasks
 
-  - Long java Check command to Set path variable (automatically)
   - Integrate with javac command.
-
+  - Multiple Errors on Single Line.
+  - Infinite loop indentification.
 
 > ## Wants to Contribute ?
 
