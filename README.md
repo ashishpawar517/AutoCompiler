@@ -10,7 +10,7 @@
 ![](https://img.shields.io/badge/made%20with%20%E2%9D%A4%EF%B8%8F%20-java%20-orange)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-[![GitHub commits](https://img.shields.io/github/commits-since/Naereen/StrapDown.js/v1.0.0.svg)](https://github.com/pawarashish564/AutoCompiler/commit/)
+[![GitHub commits](https://img.shields.io/github/commits-since/Naereen/StrapDown.js/v1.0.0.svg)](https://github.com/pawarashish564/AutoCompiler/commit/master)
 
 <!-- [![GitHub issues-closed](https://img.shields.io/github/issues-closed/Naereen/StrapDown.js.svg)](https://github.com/pawarashish564/AutoCompiler/issues?q=is%3Aissue+is%3Aclosed) -->
 ## 👀 See How it works 
