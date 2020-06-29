@@ -32,7 +32,7 @@ public class Check {
         .sorted(Comparator.comparing(Tuple::getSecond))
         .collect(Collectors.toList());
     
-        System.out.println(list);
+        System.out.println(list_missing_symbols);
         //if (result != true)
         //    System.out.println("Missing Elements : ");
         RandomWriter writer = new RandomWriter();
@@ -44,11 +44,13 @@ public class Check {
             writer.writeToFileWithNewLine(fileToCompile, String.valueOf(error.charAt(1)), Long.parseLong(pos));
         }
     
+        System.out.println("missing symbols");
         List<Tuple<String>> otherErrors = list.stream()
         .filter(e -> !e.getThird().endsWith("expected")) 
         .sorted(Comparator.comparing(Tuple::getSecond))
         .collect(Collectors.toList());
     
+        System.out.println(otherErrors);
         RandomReader reader = new RandomReader();
         for (Tuple<String> tuple : otherErrors) {
             
@@ -57,7 +59,10 @@ public class Check {
             String type = tuple.getFirst();
             // System.out.println(error);
             
-            if(error.equals("incompatible types: int[] cannot be converted to int"))
+            if(error.equals("incompatible types: int[] cannot be converted to int")|| 
+               error.equals("incompatible types: double[] cannot be converted to double") ||
+               error.equals("incompatible types: float[] cannot be converted to float") 
+                    )
             {
                 //manually handle the case when square bracket is missing
                 // long pos = Long.parseLong(tuple.getSecond());
@@ -75,7 +80,7 @@ public class Check {
                 writer.commentLine(fileToCompile, lineNumber-1);
                 writer.writeTofileWithLineNumber(fileToCompile, sb.toString(), lineNumber);
             }
-            else if(error.equals("reached end of file while parsing"))
+            if(error.equals("reached end of file while parsing"))
             {
                 
                 // System.out.println("matched ");
@@ -84,7 +89,7 @@ public class Check {
                 writer.writeTofileWithLineNumber(fileToCompile, "}",lineNumber );
        
             }
-            else if(type.equals("compiler.err.class.public.should.be.in.file"))
+             if(type.equals("compiler.err.class.public.should.be.in.file"))
             {
                 long lineNumber = Long.parseLong(tuple.getForth());
                 // String line = reader.getLine(fileToCompile, lineNumber);
@@ -104,7 +109,7 @@ public class Check {
             }
         }
 
-
+        System.out.println("done 2");
         if (result) {
             System.out.println("\nCompilation has succeeded");
         }
