@@ -16,12 +16,16 @@
 ## 👀 See How it works 
 
 > ### Level 1 Errors (semicolon/ bracket missing)
-![](readme/ezgif1.gif)
+<!-- ![](readme/ezgif1.gif) -->
 
+<img src="readme/ezgif1.gif" alt="Kitten"
+	title="gif1"  style="box-shadow: 0 10px 6px -6px #777;"/>
 
 > ### Level 2 Errors (public class name / array initialization )
 
-![](readme/ezgif2.gif)
+<!-- ![](readme/ezgif2.gif) -->
+<img src="readme/ezgif2.gif" alt="Kitten"
+	title="gif1"  style="box-shadow: 0 10px 6px -6px #777;"/>
 
 <!-- > ##### Tip -->
 <!-- Format Document after the execution -->
