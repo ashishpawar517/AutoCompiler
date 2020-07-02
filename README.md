@@ -24,7 +24,7 @@
 > ### Level 2 Errors (public class name / array initialization )
 
 <!-- ![](readme/ezgif2.gif) -->
-<img src="readme/ezgif2.gif" alt="Kitten"
+<img src="readme/ezgif2_.gif" alt="Kitten"
 	title="gif1"  style="box-shadow: 0 10px 6px -6px #777;"/>
 
 <!-- > ##### Tip -->
