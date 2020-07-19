@@ -45,7 +45,6 @@
 
  This AutoCompiler still in development so It only understands the basic error handling and workflow.
 
-
  ## 💁🏻 Contributing
 
 - This is an open source project. Any contribution would be greatly appreciated!
