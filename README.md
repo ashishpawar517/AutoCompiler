@@ -11,6 +11,11 @@
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 ![](https://img.shields.io/github/commits-since/pawarashish564/AutoCompiler/1.0)
+[![](https://tokei.rs/b1/github/pawarashish564/AutoCompiler?category=lines)](https://github.com/pawarashish564/AutoCompiler)
+<a href="https://gitmoji.carloscuesta.me">
+  <img src="https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat-square" alt="Gitmoji">
+</a>
+
 <!-- ![GitHub commits](https://img.shields.io/github/commit-activity/m/pawarashish564/AutoCompiler) -->
 <!-- [![GitHub issues-closed](https://img.shields.io/github/issues-closed/Naereen/StrapDown.js.svg)](https://github.com/pawarashish564/AutoCompiler/issues?q=is%3Aissue+is%3Aclosed) -->
 ## 👀 See How it works 
