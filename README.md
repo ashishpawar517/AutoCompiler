@@ -3,12 +3,11 @@
 <p align="center"><img src="readme/logo_svg.svg" width="400"></p>
 <!-- </h1> -->
 <p align="center">
-  <https://img.shields.io/badge/made%20with%20%E2%9D%A4%EF%B8%8F%20-java%20-orange
-
-[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-![](https://img.shields.io/github/commits-since/pawarashish564/AutoCompiler/1.0)
-[![](https://tokei.rs/b1/github/pawarashish564/AutoCompiler?category=lines)](https://github.com/pawarashish564/AutoCompiler)
+  <img src="https://img.shields.io/badge/made%20with%20%E2%9D%A4%EF%B8%8F%20-java%20-orange">
+<img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat">
+<img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square">
+<img src="https://img.shields.io/github/commits-since/pawarashish564/AutoCompiler/1.0">
+<img src="https://tokei.rs/b1/github/pawarashish564/AutoCompiler?category=lines">
 <a href="https://gitmoji.carloscuesta.me">
   <img src="https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat-square" alt="Gitmoji">
 </a>
