@@ -1,0 +1,6 @@
+com/ap/autocompiler/utils/FileWriter.class
+com/ap/autocompiler/compilation/GetErrorsFromSource.class
+com/ap/autocompiler/AutocompilerApplication.class
+com/ap/autocompiler/compilation/model/Error.class
+com/ap/autocompiler/main/Main.class
+com/ap/autocompiler/errorfix/SolveErrorsFromSource.class
