@@ -30,7 +30,14 @@
 	</dependencies>
 
 	<build>
-		<plugins></plugins>
+		<resources>
+			<resource>
+				<directory>src/main/resources/samples</directory>
+				<excludes>
+					<exclude>HelloWorldProgram.java</exclude>
+				</excludes>
+			</resource>
+		</resources>
 	</build>
 
 </project>
