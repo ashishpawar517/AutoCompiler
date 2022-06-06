@@ -1,4 +1,3 @@
-com/ap/autocompiler/utils/FileWriter.class
 com/ap/autocompiler/compilation/GetErrorsFromSource.class
 com/ap/autocompiler/AutocompilerApplication.class
 com/ap/autocompiler/compilation/model/Error.class
