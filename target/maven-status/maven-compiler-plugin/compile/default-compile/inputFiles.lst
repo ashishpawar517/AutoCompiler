@@ -1,9 +1,0 @@
-/home/ashish/Desktop/AutoCompiler/src/main/java/com/ap/autocompiler/AutocompilerApplication.java
-/home/ashish/Desktop/AutoCompiler/src/main/java/com/ap/autocompiler/compilation/BracketParser.java
-/home/ashish/Desktop/AutoCompiler/src/main/java/com/ap/autocompiler/compilation/model/Error.java
-/home/ashish/Desktop/AutoCompiler/src/main/java/com/ap/autocompiler/utils/Pair.java
-/home/ashish/Desktop/AutoCompiler/src/main/java/com/ap/autocompiler/compilation/RegexParser.java
-/home/ashish/Desktop/AutoCompiler/src/main/java/com/ap/autocompiler/compilation/GetErrorsFromSource.java
-/home/ashish/Desktop/AutoCompiler/src/main/java/com/ap/autocompiler/errorfix/SolveErrorsFromSource.java
-/home/ashish/Desktop/AutoCompiler/src/main/java/com/ap/autocompiler/utils/FileUtils.java
-/home/ashish/Desktop/AutoCompiler/src/main/java/com/ap/autocompiler/main/Main.java
