@@ -51,6 +51,7 @@ We have a list of [good first issues](https://github.com/ashishpawar517/AutoComp
 ## Authors
 
 - Aashish Pawar ([@ashishpawar517](https://github.com/ashishpawar517)) 
+- Tauseef Ansari ([@tauseefansari](https://github.com/tauseefansari)) 
 
 
  
