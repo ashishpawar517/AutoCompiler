@@ -11,8 +11,6 @@
   
   <img src="https://forthebadge.com/images/badges/made-with-java.svg">
 
-  <img src="https://forthebadge.com/images/badges/open-source.svg">
-
   <img alt="" src="https://img.shields.io/npm/l/next.svg?style=for-the-badge" height="35px">
 
   <img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=for-the-badge" height="35px">
@@ -32,7 +30,7 @@
 WIP -->
 
 ## What is AutoCompiler?
-An automation project to solve compile-time errors on the fly. The idea started with an argument like if a compiler is smart enough to tell us that there’s a missing semi colon on line 17 then why is it can't just a semicolon there. See it in action.
+An automation project to solve compile-time errors on the fly. The idea started with an argument like if a compiler is smart enough to tell us that there’s a missing semi colon on line 17 then why is it can't just a semicolon there. That's what Autocompiler aims to do. See it in action.
 
 <img src=".github/ezgif1.gif" alt="Kitten"
 	title="gif1"  style="box-shadow: 0 10px 6px -6px #777;"/>
@@ -42,7 +40,7 @@ The AutoCompiler community can be found on [GitHub Discussions](https://github.c
 
 ## Contributing
 
-Please see our [contributing.md](/contributing.md).
+Please see our [contributing.md](/CONTRIBUTING.md).
 
 ### Good First Issues
 
