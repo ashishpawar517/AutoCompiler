@@ -1,30 +1,17 @@
-# Contribution Guidelines
+# Contributing to AutoCompiler
 
-<!-- ----- -->
-👍🎉 First off, thanks for taking the time to contribute! 🎉👍
+First off, thanks for taking the time to contribute
 
+1. [Fork](https://help.github.com/articles/fork-a-repo/) this repository to your own GitHub account and then [clone](https://help.github.com/articles/cloning-a-repository/) it to your local device.
+2. Create a new branch: `git checkout -b MY_BRANCH_NAME`
+3. Install maven: `apt install maven`, or if u don't have maven installed use `mvnw` script. (VSCode will automatelly use it if you have java setuped in VScode.) 
+4. Install the dependencies: `maven install`
+5. Run `java -jar target/autocompiler-0.0.1-SNAPSHOT.jar` and watch for Sample application errors get fixed
 
-## Report bugs
+For running autocompiler on any other file pass change the value in `-Dexec.args`.
 
-- Use GitHub issues to track public bugs. Report a bug by [opening a new issue](https://github.com/pawarashish564/AutoCompiler/issues/new) 
-
-## For new Contributors 
-
-1. Fork it 🍴 
-2. Add code that you want to edit . 👨‍💻 
-3. push to your github and request a pull request to master. 🙋
-
-## For Existing Contributors 
-
-### pull changes from the official repo
-
-1. git remote add upstream https://github.com/pawarashish564/AutoCompiler.git
-2. git fetch upstream
-3. git merge upstream/master
-4. git push
-
-<!-- - Use GitHub issues to track public bugs. Report a bug by [opening a new issue](https://github.com/pawarashish564/AutoCompiler/issues/new); -->
-
-### Check out current issues/discussions
-
-1. Visit [Github Issues](https://github.com/pawarashish564/AutoCompiler/issues)
+```bash
+mvn compile exec:java 
+-Dexec.mainClass="com.ap.autocompiler.AutocompilerApplication"
+-Dexec.args="src/main/resources/samples/MissingSemicolonSource.java"
+```

@@ -1,64 +1,55 @@
-<!-- <h1 align="center"> -->
- <!-- Java AutoCompiler -->
-<p align="center"><img src="readme/logo_svg.svg" width="400"></p>
-<!-- </h1> -->
 <p align="center">
-  <img src="https://img.shields.io/badge/made%20with%20%E2%9D%A4%EF%B8%8F%20-java%20-orange">
-<img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat">
-<img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square">
-<img src="https://img.shields.io/github/commits-since/pawarashish564/AutoCompiler/1.0">
-<img src="https://tokei.rs/b1/github/pawarashish564/AutoCompiler?category=lines">
-<a href="https://gitmoji.carloscuesta.me">
-  <img src="https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat-square" alt="Gitmoji">
+  <a href="https://github.com/ashishpawar517/AutoCompiler">
+    <img src=".github/auto-compiler-logo.png" height="128">
+    <h1 align="center">AutoCompiler</h1>
+  </a>
+</p>
+
+<p align="center">
+
+  <img src="https://forthebadge.com/images/badges/built-with-love.svg">
+  
+  <img src="https://forthebadge.com/images/badges/made-with-java.svg">
+
+  <img alt="" src="https://img.shields.io/npm/l/next.svg?style=for-the-badge" height="35px">
+
+  <img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=for-the-badge" height="35px">
+
 </a>
 
 </p>
 
-## ℹ️️ About AutoCompiler
+## Getting Started
 
 - Solves common programming errors automatically.
 - Powered by Java Compiler API.
 
 
-<!-- ![GitHub commits](https://img.shields.io/github/commit-activity/m/pawarashish564/AutoCompiler) -->
-<!-- [![GitHub issues-closed](https://img.shields.io/github/issues-closed/Naereen/StrapDown.js.svg)](https://github.com/pawarashish564/AutoCompiler/issues?q=is%3Aissue+is%3Aclosed) -->
-## 👀 See How it works 
+<!-- ## Documentation
 
-> ### Level 1 Errors (semicolon/ bracket missing)
-<!-- ![](readme/ezgif1.gif) -->
+WIP -->
 
-<img src="readme/ezgif1.gif" alt="Kitten"
+## What is AutoCompiler?
+An automation project to solve compile-time errors on the fly. The idea started with an argument like if a compiler is smart enough to tell us that there’s a missing semi colon on line 17 then why is it can't just a semicolon there. That's what Autocompiler aims to do. See it in action.
+
+<img src=".github/ezgif1.gif" alt="Kitten"
 	title="gif1"  style="box-shadow: 0 10px 6px -6px #777;"/>
+## Community
 
-> ### Level 2 Errors (public class name / array initialization )
+The AutoCompiler community can be found on [GitHub Discussions](https://github.com/ashishpawar517/AutoCompiler/discussions), where you can ask questions, voice ideas, and share your thoughts.
 
-<!-- ![](readme/ezgif2.gif) -->
-<img src="readme/ezgif2.gif" alt="Kitten"
-	title="gif1"  style="box-shadow: 0 10px 6px -6px #777;"/>
+## Contributing
 
-<!-- > ##### Tip -->
-<!-- Format Document after the execution -->
+Please see our [contributing.md](/CONTRIBUTING.md).
 
- ## 👨🏻‍🏫 How to Use
+### Good First Issues
 
-```console
-  $> java Check Demo.java
-```
+We have a list of [good first issues](https://github.com/ashishpawar517/AutoCompiler/labels/good%20first%20issue) that contain bugs which have a relatively limited scope. This is a great place to get started, gain experience, and get familiar with our contribution process.
 
-<!-- > ## Current Tasks
+## Authors
 
-  - Integrate with javac command.
-  - Multiple Errors on Single Line. -->
+- Aashish Pawar ([@ashishpawar517](https://github.com/ashishpawar517)) 
+- Tauseef Ansari ([@tauseefansari](https://github.com/tauseefansari)) 
 
- ## ⚠️️ Disclaimer
 
- This AutoCompiler still in development so It only understands the basic error handling and workflow.
-
- ## 💁🏻 Contributing
-
-- This is an open source project. Any contribution would be greatly appreciated!
-- If you want to help us improve, take a minute to read the [Contribution Guidelines](CONTRIBUTING.md) first.
-- If you find a any problem ,  please [open an issue](https://github.com/pawarashish564/AutoCompiler/issues/new).
-
-## 🎉 Initial Release 
- 1.0 - for handling level 1 errors.
+ 
